@@ -14,7 +14,7 @@ code segement
     mov bx , 2
     mov ax , n 
 
-    boucle :
+    boucle:
         div ax 
         cmp dx , 0 
         je aff2
@@ -32,7 +32,7 @@ code segement
         mov dx , ofsset msg1
         int 21h 
         jmp fin
-    fin : 
+    fin: 
         mov ax , 4c00h
         int 21h
     ends
